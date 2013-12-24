@@ -1,0 +1,13 @@
+{
+  "parts": [
+    {
+      "name": "clear_formatting",
+      "client_hooks": {
+        "postAceInit" : "ep_clear_formatting/static/js/clear_formatting"
+      },
+      "hooks": {
+        "eejsBlock_dd_format" : "ep_clear_formatting/clear_formatting"
+      }
+    }
+  ]
+}
