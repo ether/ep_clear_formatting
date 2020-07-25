@@ -1,7 +1,10 @@
 {
-  "name":        "ep_clear_formatting",
-  "version":     "0.0.2",
-  "keywords":    ["clear", "formatting"],
+  "name": "ep_clear_formatting",
+  "version": "0.0.3",
+  "keywords": [
+    "clear",
+    "formatting"
+  ],
   "description": "Clear formatting on a selection, this plugin requires the file menu",
   "contributors": [
     {
@@ -10,14 +13,11 @@
       "url": "http://mclear.co.uk"
     }
   ],
-
-  "repository" : {
+  "repository": {
     "type": "git",
-    "url":  "git://github.com/ether/ep_clear_formatting.git"
+    "url": "git://github.com/ether/ep_clear_formatting.git"
   },
-
   "dependencies": {},
-
   "engines": {
     "node": "*"
   }
