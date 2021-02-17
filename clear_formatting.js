@@ -1,8 +1,8 @@
-const eejs = require('ep_etherpad-lite/node/eejs/');
-const settings = require('ep_etherpad-lite/node/utils/Settings');
-const checked_state = '';
+'use strict';
 
-exports.eejsBlock_dd_format = function (hook_name, args, cb) {
+const eejs = require('ep_etherpad-lite/node/eejs/');
+
+exports.eejsBlock_dd_format = (hookName, args, cb) => {
   args.content += eejs.require('ep_clear_formatting/templates/clear_formatting_menu.ejs');
-  return cb();
+  cb();
 };
