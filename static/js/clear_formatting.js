@@ -1,4 +1,6 @@
-exports.postAceInit = function (hook, context) {
+'use strict';
+
+exports.postAceInit = (hook, context) => {
   $('#clearFormatting').click(() => {
     context.ace.callWithAce((ace) => {
       const rep = ace.ace_getRep(); // get the current user selection
