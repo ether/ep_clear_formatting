@@ -1,5 +1,6 @@
 import {expect, test} from '@playwright/test';
 import {
+  clearPadContent,
   getPadBody,
   goToNewPad,
   selectAllText,
@@ -34,6 +35,9 @@ test.beforeEach(async ({page}) => {
   pageErrors = [];
   page.on('pageerror', (e) => pageErrors.push(e.message));
   await goToNewPad(page);
+  // A new pad starts with the multi-line `defaultPadText` from settings, and
+  // these tests count formatting elements over the whole document.
+  await clearPadContent(page);
 });
 
 test.describe('ep_clear_formatting', () => {
