@@ -3,10 +3,11 @@
     {
       "name": "clear_formatting",
       "client_hooks": {
-        "postAceInit" : "ep_clear_formatting/static/js/clear_formatting"
+        "postAceInit": "ep_clear_formatting/static/js/clear_formatting",
+        "aceInitialized": "ep_clear_formatting/static/js/clear_formatting"
       },
       "hooks": {
-        "eejsBlock_dd_format" : "ep_clear_formatting/clear_formatting"
+        "eejsBlock_dd_format": "ep_clear_formatting/clear_formatting"
       }
     }
   ]
